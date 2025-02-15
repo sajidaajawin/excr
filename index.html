@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users </title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        input, button { margin: 5px; padding: 8px; }
+        table { width: 50%; margin: 20px auto; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+
+    <h2>Add User📋</h2>
+
+    <input type="text" id="nameInput" placeholder="Enter User Name">
+    <button onclick="addUser()">add user</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>user number</th>
+                <th>name</th>
+                <th>action</th>
+            </tr>
+        </thead>
+        <tbody id="userTable"></tbody>
+    </table>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
